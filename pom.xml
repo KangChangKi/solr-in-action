@@ -4,9 +4,14 @@
     <groupId>com.manning</groupId>
     <artifactId>solr-in-action</artifactId>
     <packaging>jar</packaging>
-    <version>1.0_solr-4.7.0-SNAPSHOT</version>
+    <version>1.0_solr-${solr.version}-SNAPSHOT</version>
     <name>solr-in-action</name>
     <url>http://maven.apache.org</url>
+
+    <properties>
+      <solr.version>4.10.3</solr.version>
+    </properties>
+    
     <build>
         <plugins>
             <plugin>
@@ -41,17 +46,17 @@
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-core</artifactId>
-            <version>4.7.0</version>
+            <version>${solr.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-solrj</artifactId>
-            <version>4.7.0</version>
+            <version>${solr.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-langid</artifactId>
-            <version>4.7.0</version>
+            <version>${solr.version}</version>
         </dependency>
         <dependency>
             <groupId>log4j</groupId>

@@ -34,7 +34,7 @@ public class IndexLog extends ExampleDriver.SolrJClientExample {
     public static Logger log = Logger.getLogger(IndexLog.class);
 
     private static final String ZK_HOST = "localhost:9983";
-    private static final String COLLECTION = "logmill";
+    private static final String COLLECTION = "logmill-write";
 
     private static final SimpleDateFormat TS_PARSER = new SimpleDateFormat("yyyy-MM-dd' 'HH:mm:ss.S");
 
